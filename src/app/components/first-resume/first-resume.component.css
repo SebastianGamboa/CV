@@ -1,0 +1,14 @@
+.title-line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    margin-bottom: 2rem;
+    border: none;
+    border-top: 0.2rem solid #FFC107;
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #ddd;
+}

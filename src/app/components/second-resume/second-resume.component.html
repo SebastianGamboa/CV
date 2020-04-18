@@ -1,0 +1,110 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 p-5 sidebar position-relative zi-0">
+            <header class="mb-4">
+                <h1 class="text-center">Sebastián Gamboa</h1>
+                <h3 class="text-center">Full Stack Developer</h3>
+            </header>
+            <mat-divider class="bt-light__color"></mat-divider>
+            <section class="personal-information mt-4 mb-4">
+                <h2 class="mb-3">Contacto</h2>
+                <p class="d-flex">
+                    <mat-icon class="mr-2" aria-hidden="false" aria-label="phone">call</mat-icon>(+34) 641 47 31 46
+                </p>
+                <p class="d-flex">
+                    <mat-icon class="fa-icon__background mr-2 position-relative" style="color: #da372d;" aria-hidden="false" aria-label="email">email</mat-icon>sebasgb02@gmail.com
+                </p>
+                <p class="d-flex">
+                    <i class="fab fa-linkedin fa-icon__background fs-24 mr-2 position-relative" style="color: #0077b5;padding-left: 2px;padding-right: 2px;"></i>
+                    linkedin.com/in/sebastiangamboa02
+                </p>
+                <!-- <p class="d-flex">
+                    <i class="fab fa-twitter fs-24 mr-2" style="color: rgb(29, 161, 242);"></i>twitter.com/sebasgb02
+                </p> -->
+                <p class="d-flex">
+                    <mat-icon class="mr-2" aria-hidden="false" aria-label="place">place</mat-icon>Madrid, España
+                </p>
+            </section>
+            <mat-divider class="bt-light__color"></mat-divider>
+            <section class="education mt-4 mb-4">
+                <h2 class="mb-3">Educación</h2>
+                <h5 class="mb-2">Universidad Distrital</h5>
+                <p class="mb-1">Ingeniería en Telemática</p>
+                <p>2018 (Aplazado)</p>
+                <h5 class="mb-2">Universidad Distrital</h5>
+                <p class="mb-1">Tecnólogo en Sistematización de Datos</p>
+                <p>2017</p>
+            </section>
+            <mat-divider class="bt-light__color"></mat-divider>
+            <section class="skills mt-4 mb-4">
+                <h2 class="mb-3">Skills</h2>
+                <div *ngFor="let skill of skills; let i=index" class="d-flex justify-content-between">
+                    <p>{{ skill.name }}</p>
+                    <div>
+                        <mat-icon *ngFor="let type of skill.rate; let i=index" class="secondary-color__text ml-2" aria-hidden="false" aria-label="">{{ type }}</mat-icon>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-8 p-5">
+            <section class="profile mb-4">
+                <h2 class="mb-3">Perfil</h2>
+                <p>Desarrollador full stack con experiencia en creación de sitios web, plataformas de banca y seguros, e-learning y servicios de transporte.</p>
+            </section>
+            <mat-divider></mat-divider>
+            <section class="experience mt-4">
+                <h2 class="mb-3">Experiencia</h2>
+                <article>
+                    <h5>Desarrollador Full Stack</h5>
+                    <p>Ditech / Octubre 2019 - Presente</p>
+                    <ul>
+                        <li>Desarrollo de microservicios para gestionar consentimientos a terceros por parte del banco.</li>
+                        <li>Optimización del tiempo de respuesta del API REST por medio de caching.</li>
+                        <li>Creación de servicios OData y stored procedures en SAP HANA para previsión de consumos y gestión de pedidos futuros.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h5>Desarrollador Full Stack</h5>
+                    <p>Periferia IT / Marzo 2019 - Septiembre 2019</p>
+                    <ul>
+                        <li>Creación del módulo de estadísticas dinámicas de las convocatorias de estudios en el exterior.</li>
+                        <li>Desarrollo del módulo de personalización y generación de tarjetas de presentación con Spring Boot, Angular y MongoDB.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h5>Ingeniero Java - Angular</h5>
+                    <p>Soaint / Noviembre 2018 - Marzo 2019</p>
+                    <ul>
+                        <li>Creación de microservicios con Spring Boot para gestionar la radicación de documentos.</li>
+                        <li>Desarrollo de POC con Angular para realizar el proceso de análisis y validación de los documentos.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h5>Desarrollador Backend</h5>
+                    <p>Cátedra / Junio 2018 - Octubre 2018</p>
+                    <ul>
+                        <li>Creación del módulo de actividades asignadas a los alumnos y gestión de notas por parte de los docentes.</li>
+                        <li>Desarrollo del proceso de inscripción y asignación de materias con autenticación pregunta-respuesta.</li>
+                        <li>Diseño de una red social para la interacción y socialización del conocimiento entre estudiantes y docentes.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h5>Desarrollador Backend - PL/SQL</h5>
+                    <p>Wog / Febrero 2018 - Junio 2018</p>
+                    <ul>
+                        <li>Creación de stored procedures para optimizar la comercialización y administración de pólizas de seguro.</li>
+                        <li>Integración de procesos de seguros en el core bancario con Java 8 y Spring Framework.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h5>Desarrollador Web</h5>
+                    <p>Interwap / Junio 2017 - Febrero 2018</p>
+                    <ul>
+                        <li>Creación del módulo de seguimiento a conductores cercano a tiempo real en el cual se visualiza la ruta, ubicación y tiempo de cada servicio de transporte en curso.</li>
+                        <li>Diseño del landing page del producto de transporte.</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>
