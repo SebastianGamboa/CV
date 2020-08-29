@@ -3,11 +3,11 @@
     --secondary-color: #1eb980;
 }
 
-.secondary-color__text { color: var(--secondary-color) }
-
 h2 {
     color: var(--secondary-color);
 }
+
+.secondary-color__text { color: var(--secondary-color) }
 
 .circle-icon {
     font-size: 0.4rem !important;

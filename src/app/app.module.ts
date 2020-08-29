@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { ResumeEnComponent } from './components/resume-en/resume-en.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstResumeComponent,
-    SecondResumeComponent
+    SecondResumeComponent,
+    ResumeEnComponent
   ],
   imports: [
     BrowserModule,
