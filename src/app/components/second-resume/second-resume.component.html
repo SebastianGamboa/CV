@@ -12,17 +12,21 @@
                     <mat-icon class="mr-2" aria-hidden="false" aria-label="phone">call</mat-icon>(+34) 641 47 31 46
                 </p>
                 <p class="d-flex">
-                    <mat-icon class="fa-icon__background mr-2 position-relative" style="color: #da372d;" aria-hidden="false" aria-label="email">email</mat-icon>sebasgb02@gmail.com
+                    <mat-icon class="fa-icon__background mr-2 position-relative" style="color: #da372d;" aria-hidden="false" aria-label="email">email</mat-icon>sebasgb123@gmail.com
                 </p>
                 <p class="d-flex">
                     <i class="fab fa-linkedin fa-icon__background fs-24 mr-2 position-relative" style="color: #0077b5;padding-left: 2px;padding-right: 2px;"></i>
                     linkedin.com/in/sebastiangamboa02
                 </p>
+                <p class="d-flex">
+                    <i class="fab fa-github fs-24 mr-2 position-relative" style="padding-left: 2px;"></i>
+                    github.com/SebastianGamboa
+                </p>
                 <!-- <p class="d-flex">
                     <i class="fab fa-twitter fs-24 mr-2" style="color: rgb(29, 161, 242);"></i>twitter.com/sebasgb02
                 </p> -->
                 <p class="d-flex">
-                    <mat-icon class="mr-2" aria-hidden="false" aria-label="place">place</mat-icon>Madrid, España
+                    <mat-icon class="mr-2" aria-hidden="false" aria-label="place">place</mat-icon>Barcelona, España
                 </p>
             </section>
             <mat-divider class="bt-light__color"></mat-divider>
@@ -38,12 +42,49 @@
             <mat-divider class="bt-light__color"></mat-divider>
             <section class="skills mt-4 mb-4">
                 <h2 class="mb-3">Skills</h2>
-                <div *ngFor="let skill of skills; let i=index" class="d-flex justify-content-between">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5 class="mb-2">Lenguajes</h5>
+                        <ul style="list-style: circle;">
+                            <li style="margin-bottom: 5px;">Java</li>
+                            <li style="margin-bottom: 5px;">Typescript</li>
+                            <li style="margin-bottom: 5px;">Javascript</li>
+                            <li style="margin-bottom: 5px;">PHP</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 pl-0">
+                        <h5 class="mb-2">Frameworks</h5>
+                        <ul style="list-style: circle;">
+                            <li style="margin-bottom: 5px;">Spring Boot</li>
+                            <li style="margin-bottom: 5px;">Angular</li>
+                            <li style="margin-bottom: 5px;">Vue.js</li>
+                            <li style="margin-bottom: 5px;">React.js</li>
+                            <li style="margin-bottom: 5px;">Express</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="mb-2">Otros</h5>
+                        <ul style="list-style: circle;">
+                            <li style="margin-bottom: 5px;">Node.js</li>
+                            <li style="margin-bottom: 5px;">SQL - PL/SQL</li>
+                            <li style="margin-bottom: 5px;">MongoDB</li>
+                            <li style="margin-bottom: 5px;">CSS</li>
+                            <li style="margin-bottom: 5px;">Git</li>
+                            <li style="margin-bottom: 5px;">Unit Testing</li>
+                            <li>Scrum</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div *ngFor="let skill of skills; let i=index" class="d-flex justify-content-between">
                     <p>{{ skill.name }}</p>
                     <div>
                         <mat-icon *ngFor="let type of skill.rate; let i=index" class="secondary-color__text ml-2" aria-hidden="false" aria-label="">{{ type }}</mat-icon>
                     </div>
-                </div>
+                </div> -->
             </section>
         </div>
         <div class="col-sm-8 p-5">
@@ -56,24 +97,24 @@
                 <h2 class="mb-3">Experiencia</h2>
                 <article>
                     <h5>Desarrollador Full Stack</h5>
-                    <p>Ditech / Octubre 2019 - Presente</p>
+                    <p>Ditech | Octubre 2019 - Presente</p>
                     <ul>
                         <li>Desarrollo de microservicios para gestionar consentimientos a terceros por parte del banco.</li>
                         <li>Optimización del tiempo de respuesta del API REST por medio de caching.</li>
-                        <li>Creación de servicios OData y stored procedures en SAP HANA para previsión de consumos y gestión de pedidos futuros.</li>
+                        <li>Creación de servicios para procesar los datos en background para mejorar el rendimiento, usando colas con Bull.js y Node.js</li>
                     </ul>
                 </article>
                 <article>
                     <h5>Desarrollador Full Stack</h5>
-                    <p>Periferia IT / Marzo 2019 - Septiembre 2019</p>
+                    <p>Periferia IT | Marzo 2019 - Septiembre 2019</p>
                     <ul>
-                        <li>Creación del módulo de estadísticas dinámicas de las convocatorias de estudios en el exterior.</li>
+                        <li>Desarrollo de API REST para generar datos estadísticos con pipelines en MongoDB y componentes dinámicos para visualización de estadísticas en gráficos.</li>
                         <li>Desarrollo del módulo de personalización y generación de tarjetas de presentación con Spring Boot, Angular y MongoDB.</li>
                     </ul>
                 </article>
                 <article>
                     <h5>Ingeniero Java - Angular</h5>
-                    <p>Soaint / Noviembre 2018 - Marzo 2019</p>
+                    <p>Soaint | Noviembre 2018 - Marzo 2019</p>
                     <ul>
                         <li>Creación de microservicios con Spring Boot para gestionar la radicación de documentos.</li>
                         <li>Desarrollo de POC con Angular para realizar el proceso de análisis y validación de los documentos.</li>
@@ -81,7 +122,7 @@
                 </article>
                 <article>
                     <h5>Desarrollador Backend</h5>
-                    <p>Cátedra / Junio 2018 - Octubre 2018</p>
+                    <p>Cátedra | Junio 2018 - Octubre 2018</p>
                     <ul>
                         <li>Creación del módulo de actividades asignadas a los alumnos y gestión de notas por parte de los docentes.</li>
                         <li>Desarrollo del proceso de inscripción y asignación de materias con autenticación pregunta-respuesta.</li>
@@ -90,7 +131,7 @@
                 </article>
                 <article>
                     <h5>Desarrollador Backend - PL/SQL</h5>
-                    <p>Wog / Febrero 2018 - Junio 2018</p>
+                    <p>Wog | Febrero 2018 - Junio 2018</p>
                     <ul>
                         <li>Creación de stored procedures para optimizar la comercialización y administración de pólizas de seguro.</li>
                         <li>Integración de procesos de seguros en el core bancario con Java 8 y Spring Framework.</li>
@@ -98,7 +139,7 @@
                 </article>
                 <article>
                     <h5>Desarrollador Web</h5>
-                    <p>Interwap / Junio 2017 - Febrero 2018</p>
+                    <p>Interwap | Junio 2017 - Febrero 2018</p>
                     <ul>
                         <li>Creación del módulo de seguimiento a conductores cercano a tiempo real en el cual se visualiza la ruta, ubicación y tiempo de cada servicio de transporte en curso.</li>
                         <li>Diseño del landing page del producto de transporte.</li>
