@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SecondResumeComponent } from './second-resume.component';
 
@@ -6,7 +6,7 @@ describe('SecondResumeComponent', () => {
   let component: SecondResumeComponent;
   let fixture: ComponentFixture<SecondResumeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SecondResumeComponent ]
     })
